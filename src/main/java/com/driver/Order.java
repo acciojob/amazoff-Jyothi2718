@@ -11,11 +11,11 @@ public class Order {
         //deliveryTime  = HH*60 + MM
         this.id = id;
         int hours = Integer.parseInt(deliveryTime.substring(0,2));
-        int mins = Integer.ParseInt(deliveryTime.substring(3));
+        int mins = Integer.parseInt(deliveryTime.substring(3));
         this.deliveryTime = (60 * hours) + mins;
     }
 
-    public order(){}
+    public Order(){}
 
     public String getId() {
         return id;
